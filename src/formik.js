@@ -49,7 +49,7 @@ function Formikcomponent(){
     
        const handleSubmit=async (formdata, { resetForm })=>{
         console.log(formdata);
-        const response= await axios.post("https://632f42ebb56bd6ac45adc26a.mockapi.io/:libraryuser",
+        const response= await axios.post("https://632f42ebb56bd6ac45adc26a.mockapi.io/libraryuser",
         {
          fristname: formdata.fristname,
          lastname: formdata.lastname,
@@ -72,7 +72,7 @@ function Formikcomponent(){
            
            <Formik
        initialValues={{
-        firstname:"",
+        firstname:"",   
         lastname:"",
         email:"",
         issuedate:"",
