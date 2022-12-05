@@ -48,7 +48,7 @@ function Formikcomponent(){
     },[]);
     
        const handleSubmit=async (formdata, { resetForm })=>{
-        console.log(formdata);
+        console.log("hi");
         const response= await axios.post("https://632f42ebb56bd6ac45adc26a.mockapi.io/libraryuser",
         {
          fristname: formdata.fristname,
@@ -75,8 +75,9 @@ function Formikcomponent(){
         firstname:"",   
         lastname:"",
         email:"",
-        issuedate:"",
-        returndate:"",
+        bookname:"",
+        startDate:"",
+        endDate:"",
         mobilenumber:"",
         gender:"",
        }}
